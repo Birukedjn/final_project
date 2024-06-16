@@ -1,0 +1,17 @@
+.nextpage-previouspage {
+  background-color: rgb(253, 192, 80);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: padding 0.15s, background-color 0.15s;
+}
+.nextpage-previouspage:hover {
+  padding: 10px 15px;
+}
+.nextpage-previouspage:active {
+  background-color: rgb(247, 166, 17);
+  padding: 10px 18px;
+}

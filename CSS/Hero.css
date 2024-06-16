@@ -1,0 +1,201 @@
+ .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 930px) {
+  .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.left-side {
+  width: 70%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -25px;
+  
+}
+
+.homepage-text {
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  max-height: 50%;
+  display:contents;
+  
+
+}
+
+.homepage-text h1 {
+  font-size: 30px;
+  margin: 0px;
+  line-height: 1.1em;
+  color:#ffffff;
+  transition: font-size 0.55s;
+  padding: 10px 10px;
+}
+
+.homepage-text,
+h1 span {
+  color: hsl(204, 100%, 50%);
+  
+}
+
+.homepage-text button {
+  background-color:rgb(216, 207, 207);
+  color: #093a2a;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: 1000;
+  font-size: larger;
+  cursor: pointer;
+}
+.homepage-text button:hover {
+  background-color: #093a2a;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 930px) {
+  .homepage-text h1 {
+      font-size: 30px;
+      margin: 0px;
+      line-height: 1.1em;
+      color: rgb(255, 255, 255);
+      transition: font-size 0.55s;
+      padding: 25px 40px 20PX 40PX;
+    }
+    .homepage-text button :hover {
+      background-color: #093a2a;
+      color: #ffffff;
+    }
+}
+.service {
+  width: 95%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 0;
+}
+
+.service h1 {
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+}
+
+.All-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.service .All-features div p {
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+
+.service .All-features div {
+  border: solid 1px rgb(0, 0, 0);
+  width: 120px;
+  text-align: center;
+  border-radius: 10px;
+  transition: box-shadow 0.15s, width 0.15s;
+  cursor: pointer;
+  box-shadow: 4px 4px 7px rgb(6, 115, 143);
+}
+
+.service .All-features div:hover {
+  box-shadow: 0px 0px 10px rgba(29, 175, 219, 0.1);
+  width: 130px;
+ background: #063a31cb;
+ color: #ffffff;
+}
+
+.service .All-features div:active {
+  width: 120px;
+}
+
+.Gym,
+.swimmingPool,
+.spa,
+.HotelTeller,
+.CarParking,
+.MiniBar,
+.CarAirport {
+  padding-top: 1em;
+  width: 30%;
+
+}
+
+@media only screen and (min-width: 930px) {
+  .service {
+    padding: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .All-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+
+  }
+
+  .service .All-features div:hover {
+    box-shadow: 0px 0px 10px rgba(24, 56, 241, 0.1);
+    width: 110px;
+  }
+
+  .service .All-features div:active {
+    width: 120px;
+    box-shadow: 0px 0px 15px rgba(14, 119, 206, 0.842);
+  }
+}
+
+
+
+
+.right-side {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+    margin-right: 0.5em;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 1em;
+
+}
+
+
+
+
+@media only screen and (min-width: 930px) {
+.right-side {
+    display: flex;
+  }
+}
